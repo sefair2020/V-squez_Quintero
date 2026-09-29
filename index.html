@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Diseño Gráfico, Desarrollo Web y Fotografía</title>
+
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</head>
+
+<body>
+
+    <h1>INICIO</h1>
+
+    <header>
+        <div class="header-container">
+
+            <div class="logo">Servicios digitales</div>
+
+            <img src="img/logo.png" width="170" height="80"
+                alt="Servicios Digitales">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="contactos.html">CONTACTOS</a></li>
+                    <li><a href="servicios.html">SERVICIOS</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <div class="prueba">
+
+        <div class="wrapper">
+
+            <div class="carousel owl-carousel">
+
+                <div class="card">
+                    <img src="img/foto1.jpg" width="100px" height="300px" alt="Diseño Gráfico">
+                </div>
+
+                <div class="card">
+                    <img src="img/foto2.jpg" width="100px" height="300px" alt="Desarrollo Web">
+                </div>
+
+                <div class="card">
+                    <img src="img/foto3.jpg" width="100px" height="300px" alt="Fotografía">
+                </div>
+
+                <div class="card">
+                    <img src="img/foto4.jpg" width="100px" height="300px" alt="Servicios Digitales">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        $(".carousel").owlCarousel({
+            margin: 10,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 1250,
+            autoplayHoverPause: true,
+
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+
+                600: {
+                    items: 2,
+                    nav: false
+                },
+
+                1000: {
+                    items: 3,
+                    nav: false
+                }
+            }
+        });
+    </script>
+
+<footer>
+<div class="footer-container">
+<p>&copy; 2026 Elena Martínez - Enfermería Profesional a Domicilio.</p>
+<p>📍 Madrid | 📞 <a href="tel:+34600123456">+34 600 123 456</a> | ✉️ <a href="elena@enfermeria.com">elena@enfermeria.com</a></p>
+</div>
+</footer>
+
+
+</body>
+
+</html>
